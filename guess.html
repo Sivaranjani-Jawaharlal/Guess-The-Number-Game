@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+      integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+      integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+      crossorigin="anonymous"
+    ></script>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GUESS GAME</title>
+    <link rel="stylesheet" href="guess.css" />
+  </head>
+
+  <body>
+    <center>
+      <div class="first">
+        <center>
+          <h3 class="f_titleh3">WELCOME TO</h3>
+          <h1 class="f_title">GUESS THE NUMBER</h1>
+          <br />
+          <button id="play">PLAY</button>
+        </center>
+      </div>
+      <div class="second">
+        <center>
+          <h1>Total Rounds</h1>
+          <ol>
+            <li>ROUND 1✨</li>
+            <li>ROUND 2🔥</li>
+            <li>ROUND 3👑</li>
+          </ol>
+          <button id="start">START</button><br />
+          <button id="back">back</button>
+        </center>
+      </div>
+      <div class="level1">
+        <div id="welcomeBox_1" class="welcome-box">
+          <h2>Welcome to Level-1 🚀</h2>
+        </div>
+        <div class="level-content">
+          <h1>GUESS THE NUMBER</h1>
+          <h2>Level-1</h2>
+          <h3>Enter a number from 1 to 20</h3>
+          <input type="number" class="guessnumber1" /><br />
+          <button class="button" onclick="check1()">check</button>
+          <p class="result1">you are right/wrong</p>
+          <p id="score1">you have only 10 chance</p>
+          <button class="lev2">LEVEL2</button><br />
+          <button id="back1" class="back">Back</button>
+        </div>
+      </div>
+      <div class="level2">
+        <div id="welcomeBox_2" class="welcome-box">
+          <h2>Welcome to Level-2 🔥 </h2>
+        </div>
+        <div class="level-content">
+          <h1>GUESS THE NUMBER</h1>
+          <h2>Level-2</h2>
+          <h3>Enter a number from 1 to 50</h3>
+          <input type="number" class="guessnumber2" /><br />
+          <button class="button" onclick="check2()">check</button>
+          <p class="result2">you are right/wrong</p>
+          <p id="score2">you have only 7 chance</p>
+          <button class="lev3">LEVEL3</button><br />
+          <button id="back2" class="back">Back</button>
+        </div>
+      </div>
+      <div class="level3">
+        <div id="welcomeBox_3" class="welcome-box">
+          <h2>Welcome to Level-3 👑</h2>
+        </div>
+        <div class="level3-content">
+          <h1>GUESS THE NUMBER</h1>
+          <h2>Level-3</h2>
+          <h3>Enter a number from 1 to 100</h3>
+          <input type="number" class="guessnumber3" /><br />
+          <button class="button" onclick="check3()">check</button>
+          <p class="result3">you are right/wrong</p>
+          <p id="score3">you have only 5 chance</p>
+          <button id="back3" class="back" onclick="resetGame()">EXIT</button>
+        </div>
+      </div>
+    </center>
+    <script src="guess.js"></script>
+  </body>
+</html>
