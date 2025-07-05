@@ -1,1 +1,1 @@
-hello # Guess-The-Number-Game
+"Guess The Number" is a multi-level JavaScript game where players try to guess a random number within limited chances. Includes 3 levels with increasing difficulty, interactive UI, alerts, and score tracking. Built with HTML, CSS, and vanilla JS.
